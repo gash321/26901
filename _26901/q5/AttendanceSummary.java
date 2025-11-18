@@ -39,7 +39,7 @@ public final class AttendanceSummary extends LeaveRequest {
 
     public void displaySummary() {
         System.out.println("\n========================================");
-        System.out.println("   ATTENDANCE SUMMARY - 27091");
+        System.out.println("ID: 26901");
         System.out.println("========================================");
         System.out.println("Report Date: " + reportDate);
         System.out.println("----------------------------------------");
@@ -76,7 +76,7 @@ public final class AttendanceSummary extends LeaveRequest {
         System.out.println("Total Sessions: " + (totalPresent + totalAbsent));
         System.out.println("----------------------------------------");
         System.out.println("ATTENDANCE PERCENTAGE: " + String.format("%.2f", generateSummary()) + "%");
-        System.out.println("Student ID: 27091");
+        System.out.println("ID: 26901");
         System.out.println("========================================\n");
     }
 }

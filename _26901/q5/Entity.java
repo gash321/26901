@@ -1,23 +1,19 @@
 package _26901.q5;
 import java.time.LocalDate;
 
-public class Institution extends Entity {
-    private String institutionName;
-    private String code;
-    private String address;
+public class Entity {
+    private int id;
+    private LocalDate createdDate;
+    private LocalDate updatedDate;
 
-    public Institution(int id, LocalDate createdDate, LocalDate updatedDate,
-                       String institutionName, String code, String address) {
-        super(id, createdDate, updatedDate);
-        if (code == null || code.length() < 3) {
-            throw new IllegalArgumentException("Code must be at least 3 characters");
-        }
-        this.institutionName = institutionName;
-        this.code = code;
-        this.address = address;
+    public Entity(int id, LocalDate createdDate, LocalDate updatedDate) {
+        if (id <= 0) throw new IllegalArgumentException("ID must be greater than 0");
+        this.id = id;
+        this.createdDate = createdDate;
+        this.updatedDate = updatedDate;
     }
 
-    public String getInstitutionName() { return institutionName; }
-    public String getCode() { return code; }
-    public String getAddress() { return address; }
+    public int getId() { return id; }
+    public LocalDate getCreatedDate() { return createdDate; }
+    public LocalDate getUpdatedDate() { return updatedDate; }
 }

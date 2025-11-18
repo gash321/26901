@@ -1,0 +1,22 @@
+1
+Test University
+ABC
+123 Main St
+Computer Science
+Dr. Smith
+Intro to Programming
+CS101
+3
+Prof. John
+prof.john@test.edu
+0123456789
+Alice Johnson
+S12345
+20
+Variables and Types
+SES100
+Present
+N/A
+false
+10
+2

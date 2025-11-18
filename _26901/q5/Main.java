@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         try {
-            System.out.println("=== Attendance Management System - Student ID: 27091 ===\n");
+            System.out.println("AMS - Student ID: 26901\n");
 
             System.out.print("Enter ID: ");
             int id = scanner.nextInt();
@@ -95,9 +95,9 @@ public class Main {
             summary.displaySummary();
 
         } catch (IllegalArgumentException e) {
-            System.out.println("Error: " + e.getMessage() + " - Student ID: 27091");
+            System.out.println("Error: " + e.getMessage() + " - Student ID: 26901");
         } catch (Exception e) {
-            System.out.println("An error occurred: " + e.getMessage() + " - Student ID: 27091");
+            System.out.println("An error occurred: " + e.getMessage() + " - Student ID: 26901");
         } finally {
             scanner.close();
         }
