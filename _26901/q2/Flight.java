@@ -1,0 +1,35 @@
+package _26901.q2;
+public class Flight extends Airline {
+
+    private String flightNumber;
+    private String departure;
+    private String destination;
+    private double baseFare;
+
+    public Flight(long id, String airportName, String code, String location,
+                  String airlineName, String airlineCode, String contactEmail,
+                  String flightNumber, String departure, String destination, double baseFare) {
+
+        super(id, airportName, code, location, airlineName, airlineCode, contactEmail);
+
+        if (flightNumber == null || flightNumber.isBlank())
+            throw new IllegalArgumentException("Flight number cannot be empty");
+
+        if (departure == null || departure.isBlank() ||
+            destination == null || destination.isBlank())
+            throw new IllegalArgumentException("Location fields cannot be empty");
+
+        if (baseFare <= 0)
+            throw new IllegalArgumentException("Base fare must be > 0");
+
+        this.flightNumber = flightNumber;
+        this.departure = departure;
+        this.destination = destination;
+        this.baseFare = baseFare;
+    }
+
+    public String getFlightNumber() { return flightNumber; }
+    public String getDeparture() { return departure; }
+    public String getDestination() { return destination; }
+    public double getBaseFare() { return baseFare; }
+}
